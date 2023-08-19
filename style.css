@@ -86,3 +86,6 @@ body {
     font-family: 'Montserrat';
     font-size: larger;
 }
+.img {
+    border-radius: 50%;
+}
