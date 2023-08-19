@@ -1,11 +1,15 @@
 /*Global Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 :root {
-    --primary-color: #9bc3dd;
+    --primary-color: #0097B2;
+    --secondary-color:#7ED957;
     --text-color: white;
-    --bg-color: #112d38;
+    --bg-color: black;
 }
 
 body {
+    color: var(--text-color);
     font-family: 'Montserrat';
     background-color: var(--bg-color);
 }
@@ -15,7 +19,6 @@ body {
 .top-nav {
     display: flex;
     gap: 10px;
-    background: #00000020;
     padding: 10px;
     border-radius: 25px;
 }
@@ -27,7 +30,7 @@ body {
     width: 200px;
 }
 
-.nav-link:not(.logo-container) a, .nav-link button {
+.nav-link:not(.logo-container) a {
     text-decoration: none;
     width: 70%;
     text-align: center;
@@ -38,12 +41,19 @@ body {
     display: block;
     margin: auto;
     color: var(--text-color);
-    border: 2px solid var(--primary-color);
     font-size: 25px;
     padding: 10px;
 }
 
-.nav-link a:hover, .nav-link button:hover {
+.about a, .login a {
+    border: 2px solid var(--primary-color);
+}
+
+.founders a, .register a {
+    border: 2px solid var(--secondary-color);
+}
+
+.nav-link a:hover {
     filter: brightness(75%);
 }
 
@@ -61,7 +71,7 @@ body {
 
 .logo {
     border-radius: 50%;
-    width: 100px;
+    width: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -79,13 +89,4 @@ body {
     transform: translate(-50%, -50%);
     height: 60%;
     color:var(--primary-color);
-}
-.text {
-    color:white;
-    text-align: center;
-    font-family: 'Montserrat';
-    font-size: larger;
-}
-.img {
-    border-radius: 50%;
 }
