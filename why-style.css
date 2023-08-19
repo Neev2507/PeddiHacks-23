@@ -25,6 +25,10 @@ h1 {
 }
 
 .dangers-heading {
-    font-size: 20px;
+    font-size: 30px;
 }
 
+p, li {
+    margin-top: 10px;
+    font-size: 20px;
+}
