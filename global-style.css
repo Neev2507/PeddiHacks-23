@@ -88,5 +88,5 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     height: 60%;
-    color:var(--primary-color);
+    color:var(--secondary-color);
 }
