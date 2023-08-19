@@ -45,11 +45,11 @@ body {
     padding: 10px;
 }
 
-.about a, .login a {
+.about a, .why a {
     border: 2px solid var(--primary-color);
 }
 
-.founders a, .register a {
+.founders a {
     border: 2px solid var(--secondary-color);
 }
 
