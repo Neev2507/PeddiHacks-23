@@ -5,7 +5,26 @@
 }
 .neev{
     background: url("assets/neev.png") center/cover;
+    position: absolute;
+    left: 100px;
 }
 .sreenath{
     background: url("assets/sreenath.png") center/cover;
+    position:absolute;
+    left:900px;
+}
+.icon{
+    position: absolute;
+    left:100px;
+    top:300px;
+}
+.h1{
+    position: absolute;
+    left:100px;
+    top:350px;
+}
+.h2{
+    position: absolute;
+    left:100px;
+    top:420px;
 }
