@@ -1,0 +1,30 @@
+#why {
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.why-text, .dangers-container {
+    width: 80%;
+    text-align: justify;
+}
+
+.heading {
+    font-size: 50px;
+}
+
+.dangers-heading{
+    margin-top: 100px;
+}
+
+h1 {
+    color: transparent;
+    background:linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    width: fit-content;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.dangers-heading {
+    font-size: 20px;
+}
+
