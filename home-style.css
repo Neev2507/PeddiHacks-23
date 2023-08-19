@@ -1,10 +1,68 @@
-.buy{
-
+:root {
+    --card-padding: 20px;
+    --card-height: 500px;
+    --card-width: 500px;
+    --border-radius: 20px;
+    --border-width: 5px;
 }
-.img{
 
+.card {
+    border-radius: var(--border-radius);
+    padding: var(--card-padding);
+    background-color: var(--bg-color);
+    position: relative;
+    height: var(--card-height);
+    width: var(--card-width);
 }
-.card{
-    display: grid;
-    border-color: white;
+
+.card::after {
+    content: '';
+    border-radius: var(--border-radius);
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    width: calc(var(--card-width) + 2 * (var(--border-width) + var(--card-padding)));
+    height: calc(var(--card-height) + 2 * (var(--border-width) + var(--card-padding)));
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    position: absolute;
+    z-index: -1;
+}
+
+.img {
+    background: var(--img-path) center/cover;
+    width: 100%;
+    height: 250px;
+}
+
+.product-heading {
+    margin-top: 20px;
+    font-size: 25px;
+    color: transparent;
+    width: fit-content;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.product-link {
+    border-radius: 10px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    width: fit-content;
+    padding: 10px;
+}
+
+.product-link:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+}
+
+.product-link a {
+    color: var(--text-color);
+}
+
+#home {
+    justify-content: center;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
 }
