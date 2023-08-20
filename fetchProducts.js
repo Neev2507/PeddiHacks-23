@@ -32,3 +32,32 @@ fetch(url).then(res => {
         }
     })
 })
+
+const context = document.querySelector('#home');
+const instance = new Mark(context);
+const searchInput = document.querySelector('.search-input');
+const mainContent = document.querySelector('#home');
+
+searchInput.addEventListener('input', (e)=> {
+    const searchWord = e.target.value.toLowerCase();
+    let blocks = Array.from(mainContent.children);
+    let results = 0;
+    for (let i of blocks) {
+        let show = i.innerText.toLowerCase().includes(searchWord)
+        if (!show) {
+            i.style.display = 'none';
+        }
+        else {
+            i.style.display = 'block';
+            results++;
+        }
+    }
+    if (results === 0) {
+        document.querySelector('.search').style.setProperty('--error-display','block');
+    }
+    else {
+        document.querySelector('.search').style.setProperty('--error-display','none');
+    }
+    instance.unmark();
+    instance.markRegExp(new RegExp(searchWord, 'gi'));
+})
